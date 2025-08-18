@@ -12,7 +12,7 @@
           id="title"
           type="text"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                 focus:ring-[#2C5549] focus:border-[#2C5549] block w-full p-2.5"
           required
         />
       </div>
@@ -78,7 +78,7 @@
           id="description"
           rows="6"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                 focus:ring-[#2C5549] focus:border-[#2C5549] block w-full p-2.5"
         ></textarea>
       </div>
 
@@ -93,7 +93,7 @@
 </template>
 
 <script setup>
-import { useTicketsStore } from '../store/tickets';
+import { useTicketsStore } from '../store/ticketsStore';
 
 const ticketStore = useTicketsStore();
 

@@ -13,7 +13,7 @@
 
 <script setup>
   import { ref, onMounted, computed } from 'vue'
-  import { useTicketsStore } from '../store/tickets';
+  import { useTicketsStore } from '../store/ticketsStore';
   import Card from '../components/Card.vue';
   
   const ticketStore = useTicketsStore();

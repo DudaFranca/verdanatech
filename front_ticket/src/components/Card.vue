@@ -17,7 +17,7 @@
 
 <script setup>
   import { defineProps, computed } from 'vue';
-  import { useTicketsStore } from '../store/tickets';
+  import { useTicketsStore } from '../store/ticketsStore';
   import { useRouter } from 'vue-router';
 
   const ticketStore = useTicketsStore();
