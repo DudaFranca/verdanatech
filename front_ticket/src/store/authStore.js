@@ -39,7 +39,7 @@ export const useAuthStore = defineStore('auth', {
       this.isAuthenticated = false;
       localStorage.removeItem('token');
 
-      router.push('/login');
+      router.push('/');
     },
     async checkAuth() {
       const token = localStorage.getItem('token');

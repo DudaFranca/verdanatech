@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ticket;
 use Illuminate\Http\Request;
+use App\Http\Requests\ticketStoreRequest;
 
 class TicketController extends Controller
 {
@@ -13,7 +14,7 @@ class TicketController extends Controller
         return response()->json($tickets);
     }
 
-    public function store(Request $request)
+    public function store(ticketStoreRequest $request)
     {
         $ticket = new Ticket();
 

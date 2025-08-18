@@ -49,6 +49,6 @@
     };
     ticketStore.isEdit = true;
     ticketStore.editId = payload.id;
-    router.push('/new');
+    router.push('/edit');
   }
 </script>

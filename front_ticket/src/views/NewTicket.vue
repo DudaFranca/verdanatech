@@ -94,7 +94,10 @@
 
 <script setup>
 import { useTicketsStore } from '../store/ticketsStore';
+import { onMounted } from 'vue';
+import { useRoute } from "vue-router"
 
+const route = useRoute();
 const ticketStore = useTicketsStore();
 
 const save = () => {
@@ -105,4 +108,10 @@ const save = () => {
     ticketStore.ticketsSaveAction(ticketStore.newForm);
   }
 };
+
+onMounted(() => {
+  if (route.path === "/new") {
+    ticketStore.clearFormAction();
+  }
+});
 </script>
